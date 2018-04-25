@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TreeApplication</string>
+    <string name="list_name">Lists of Trees</string>
+    <string name="tree_age"> years old</string>
+
+
+</resources>
