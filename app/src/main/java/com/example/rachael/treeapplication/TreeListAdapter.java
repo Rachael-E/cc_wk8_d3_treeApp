@@ -30,7 +30,14 @@ public class TreeListAdapter extends ArrayAdapter<Tree> {
         treeNameTextView.setText(currentTree.getTreetype());
 
         TextView treeAgeTextView = listItemView.findViewById(R.id.treeAgeTextViewId);
-        treeAgeTextView.setText(currentTree.getTreeAge().toString()); // how to add ' years old' using Android resource? And how to add images?
+
+        String treeAge = currentTree.getTreeAge().toString();
+        String treeAgeInYears = "This tree is " + treeAge + " " + getContext().getString(R.string.tree_age);
+        treeAgeTextView.setText(treeAgeInYears);
+        
+        // how to add images?
+
+        // this is where the tree list image should live?
 
         listItemView.setTag(currentTree);
 
